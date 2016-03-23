@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+<title>我的验光单</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="http://file.easeeyes.com/index2015/css/ani.css" />
+</head>
+<body>
+<div class="container">
+	<!-- 头部标题 -->
+	<div class="title-header">
+		<h2 class="text-center">
+			<a href="" class="btn-back"></a>
+			我的验光单
+		</h2>
+	</div>
+	<div style="background:#fff;">
+		<div class="ygd-navbar">
+			<span>隐形眼镜验光单</span>
+			<span>框架眼镜验光单</span>
+		</div>
+		<div class="ygd-main">
+			<div class="ygd-item">
+				<h3>郭子 <span class="g-btn-default">默认</span></h3>
+				<p>右眼光度:-19.25 右眼散光:+1.75 / 右眼轴位:174 瞳距:60</p>
+				<p>左眼光度:-19.25 左眼散光:+1.75 / 左眼轴位:174 瞳距:60</p>
+				<p>验光时间：2016/01/04</p>
+			</div>
+			<div class="ygd-item-toolbar">
+				<div class="pull-right">
+					<a href=""><img src="slice/y_1.jpg" /> 编辑</a>
+					<a href=""><img src="slice/y_2.jpg" /> 删除</a>
+				</div>
+				<label class="checkbox">
+					<input type="radio" value="" name="" />
+					<span></span>
+					设为默认
+				</label>	
+			</div>
+			<div class="ygd-item">
+				<h3>郭子</h3>
+				<p>右眼光度:-19.25 右眼散光:+1.75 / 右眼轴位:174 瞳距:60</p>
+				<p>左眼光度:-19.25 左眼散光:+1.75 / 左眼轴位:174 瞳距:60</p>
+				<p>验光时间：2016/01/04</p>
+			</div>
+			<div class="ygd-item-toolbar">
+				<div class="pull-right">
+					<a href=""><img src="slice/y_1.jpg" /> 编辑</a>
+					<a href=""><img src="slice/y_2.jpg" /> 删除</a>
+				</div>
+				<label class="checkbox">
+					<input type="radio" value="" name="" />
+					<span></span>
+					设为默认
+				</label>
+			</div>
+
+			<div style="padding:10rem 0 2rem;">
+				<button class="g-btn-large">新增验光单</button>
+			</div>
+
+		</div>
+		
+		<div class="ygd-main"></div>
+
+	</div>
+	
+
+</div>
+<!-- scripts -->
+<script src="http://file.easeeyes.com/wap/js/fastclick.min.js"></script>
+<script src="http://file.easeeyes.com/js/response.js"></script>
+<script src="http://file.easeeyes.com/wap/js/tab.js"></script>
+<script>  
+window.addEventListener('load',function(){
+	FastClick.attach(document.body);
+
+	/**选项卡**/
+    new Tab({
+    	navs:document.querySelectorAll(".ygd-navbar span"),
+    	tabs:document.querySelectorAll(".ygd-main")
+    })
+
+},false);
+</script>
+</body>
+</html>
